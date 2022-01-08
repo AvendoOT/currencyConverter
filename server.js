@@ -5,7 +5,7 @@ const path = require('path');
 app = express();
 app.use(history({
     verbose: false
-}))
+}));
 app.use(serveStatic(path.join(__dirname, 'dist')));
 const port = process.env.PORT || 3000;
 app.listen(port);
